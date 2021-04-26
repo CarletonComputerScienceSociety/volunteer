@@ -1,10 +1,14 @@
 html
-    --font: "Times New Roman", Times, serif 
+    --title-font: 'Zen Dots', cursive
+    --font: font-family: 'Roboto', sans-serif
+    --breakpoint: 850px
 
 body
     padding: 0
     margin: 0
     min-height: 100vh
+
+$breakpoint: 850px
 
 @mixin hover
   transition: all 0.5s
@@ -22,6 +26,3 @@ body
     -webkit-transform: translateY(-8px)
     transform: translateY(-8px)
     transition: all 0.5s
-
-.button_space_margin
-    margin-left: 1rem

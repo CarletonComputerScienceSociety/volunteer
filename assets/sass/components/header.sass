@@ -1,11 +1,18 @@
 .header
     display: flex
     align-items: center
-    justify-content: space-between    
+    justify-content: space-between  
+    font-family: var(--font)  
 
-    @media screen and (max-width: 667px)
+    @media screen and (max-width: $breakpoint)
         flex-direction: column
         justify-content: center   
+    &_logo
+        width: 13rem
+        @media screen and (max-width: $breakpoint)
+            width: 10rem
+            margin-top: 2rem
+            margin-left: 2rem
 
     &_information
         color: white
@@ -16,35 +23,48 @@
         width: 50vw
         height: 100vh
         display: flex
-        justify-content: center
-        align-items: center
+        flex-direction: column
+        justify-content: space-between
         &_inner
             width: 30rem
             margin-bottom: 5rem
         h1
-            font-size: 84px
+            font-size: 64px
             font-weight: 100
             margin: 0
             margin-bottom: 0.6rem
+            font-family: var(--title-font)
         p
             font-size: 20px
             margin: 0
             margin-left: 0.25rem
             margin-bottom: 2rem
-        @media screen and (max-width: 667px)
+        @media screen and (max-width: $breakpoint)
             width: 100vw
-            height: 50vh
+            min-height: 50vh
+            max-height: 70vh
             padding: 0
             border-radius: 0px 0px 0rem 0px
+            p
+                width: 90%
+                margin-right: 0
             &_inner
-                margin: 3rem
-                width: 50rem
+                h1
+                    font-size: 42px
+                width: 90%
+                margin: 2rem
     &_animation
         width: 40vw
         height: 100vh
         padding: 2rem
         padding-right: 6vw
-        @media screen and (max-width: 667px)
+        @media screen and (max-width: $breakpoint)
             width: 100vw
-            height: fit-content
+            min-height: fit-content
+            max-height: 60vh
             padding: 0
+
+.right_button
+    margin-left: 1rem
+    @media screen and (max-width: 500px)
+        display: none

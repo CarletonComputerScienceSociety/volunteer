@@ -1,5 +1,7 @@
 <div class="position_card">
     <h2>{{ .Title }}</h2>
     <p>{{ .Params.Preview }}</p>
-    <a class="title" href="{{ .RelPermalink }}">{{- partial "components/button.html" . -}}</a>
+    <a class="title" href="{{ .RelPermalink }}">
+        {{- partial "components/button.html" (dict "label" "Learn More")  }}
+    </a>
 </div>
