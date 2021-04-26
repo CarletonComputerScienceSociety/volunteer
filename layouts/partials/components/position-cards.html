@@ -1,4 +1,4 @@
-<div class="position_cards">
+<div class="position_cards" id="positions">
     {{ range (where .Site.RegularPages "Section" "positions")}}
             {{- partial "components/position-card.html" . -}}
     {{ end }}

@@ -1,41 +1,50 @@
 .header
     display: flex
     align-items: center
-    justify-content: center
-    
+    justify-content: space-between    
+
     @media screen and (max-width: 667px)
-         flex-direction: column
-         &_information
-             width: 100vw
+        flex-direction: column
+        justify-content: center   
 
     &_information
         color: white
         background: black
-        border-radius: 0px 0px 40rem 0px
-        height: 70vh
-        width: 50%
-        padding: 10rem
-        padding-top: 6rem
+        padding: 2rem
+        padding-left: 6vw
+        border-radius: 0px 0px 30rem 0px
+        width: 50vw
+        height: 100vh
         display: flex
-        flex-direction: column
         justify-content: center
+        align-items: center
+        &_inner
+            width: 30rem
+            margin-bottom: 5rem
         h1
             font-size: 84px
             font-weight: 100
             margin: 0
             margin-bottom: 0.6rem
         p
-            width: 32rem
             font-size: 20px
             margin: 0
             margin-left: 0.25rem
             margin-bottom: 2rem
-            
-    &_animation
-        width: 50%
-        img
-            height: 70vh
         @media screen and (max-width: 667px)
-            img
-                height: 20rem
-        
+            width: 100vw
+            height: 50vh
+            padding: 0
+            border-radius: 0px 0px 0rem 0px
+            &_inner
+                margin: 3rem
+                width: 50rem
+    &_animation
+        width: 40vw
+        height: 100vh
+        padding: 2rem
+        padding-right: 6vw
+        @media screen and (max-width: 667px)
+            width: 100vw
+            height: fit-content
+            padding: 0
