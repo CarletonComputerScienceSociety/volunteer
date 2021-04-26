@@ -1,0 +1,41 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    @media screen and (max-width: 667px)
+         flex-direction: column
+         &_information
+             width: 100vw
+
+    &_information
+        color: white
+        background: black
+        border-radius: 0px 0px 40rem 0px
+        height: 70vh
+        width: 50%
+        padding: 10rem
+        padding-top: 6rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        h1
+            font-size: 84px
+            font-weight: 100
+            margin: 0
+            margin-bottom: 0.6rem
+        p
+            width: 32rem
+            font-size: 20px
+            margin: 0
+            margin-left: 0.25rem
+            margin-bottom: 2rem
+            
+    &_animation
+        width: 50%
+        img
+            height: 70vh
+        @media screen and (max-width: 667px)
+            img
+                height: 20rem
+        
