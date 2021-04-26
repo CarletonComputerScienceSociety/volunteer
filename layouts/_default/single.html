@@ -1,7 +1,12 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
-{{- partial "footer.html" . -}}
+    <!--{{ partial "metadata.html" . }}-->
+    {{- partial "components/position-head.html" . -}}
+    <div class="position_content">
+        {{ .Content }}
+        <div class="position_content_button">
+            {{- partial "components/button.html" (dict "label" "Apply")  }}
+        </div>
+    </div>
+    
+    {{- partial "footer.html" . -}}
 {{ end }}
