@@ -1,0 +1,10 @@
+<div class="position_intro">
+    <div class="position_intro_logo">
+        <div class="position_intro_logo_inner">
+            <a href="/"><img src="/images/logo.png"></a>
+        </div>
+    </div>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Params.Preview }}</p>
+    {{- partial "components/button.html" (dict "label" "Apply")  }}
+</div>
