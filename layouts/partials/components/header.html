@@ -1,14 +1,20 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <div class="header">
     <div class="header_information">
+        <a href="https://ccss.carleton.ca/"><img class="header_logo" src="images/logo.png"></a>
         <div class="header_information_inner">
             <h1>Volunteer</h1>
             <p>The Carleton Computer Science Society is looking for volunteers to help with our summer projects.</p>
             <div class="header_information_buttons">
-                <a href="#positions"><button class="button button_black">Positions</button></a>
-                <button class="button button_black button_space_margin">About</button>
+                <a href="#positions">
+                    {{- partial "components/button.html" (dict "label" "Positions")}}
+                </a>
+                <a href="https://ccss.carleton.ca/" class="right_button">
+                    {{- partial "components/button.html" (dict "label" "About")  }}
+                </a>
             </div>
         </div>
+        <div class="header_offset"></div>
     </div>
     <div class="header_animation">
         <lottie-player src="/lottie/image.json" background="transparent"  speed="1"  loop autoplay></lottie-player>
