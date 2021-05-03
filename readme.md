@@ -1,6 +1,6 @@
 # Volunteer Posting Website
 
-This website is a dedicated place for seeing volunteer position postings from the Carleton Computer Science Society.
+A dedicated website for seeing volunteer postings from the Carleton Computer Science Society.
 
 <img src="https://i.imgur.com/L3kkwW5.png">
 
