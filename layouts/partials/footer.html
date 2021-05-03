@@ -1,5 +1,5 @@
 <div class="footer">
-    <img src="/images/logo.png">
+    <a href="https://ccss.carleton.ca/"><img src="/images/logo.png"></a>
     <p>© 2021 Carleton Computer Science Society</p>
 </div>
 
@@ -13,4 +13,3 @@
 {{- $bundle =  $bundle | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" -}}
 
 <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
-  
