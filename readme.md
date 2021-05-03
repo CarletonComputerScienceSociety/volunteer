@@ -1,4 +1,4 @@
-# Volunteer Posting Website
+# Volunteer Positions Website
 
 A dedicated website for seeing volunteer postings from the Carleton Computer Science Society.
 
