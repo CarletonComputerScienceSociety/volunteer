@@ -17,7 +17,7 @@ For Windows users, I recommend following [this video](https://www.youtube.com/wa
 
 ### 2. Start Hugo
 
-To start Hugo, navigate to the directory where you cloned this project and run the following command
+To start Hugo, navigate to the directory where you cloned this project and run the following command:
 
 ```
 hugo server
