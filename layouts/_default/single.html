@@ -4,7 +4,7 @@
     <div class="position_content">
         {{ .Content }}
         <div class="position_content_button">
-            {{- partial "components/button.html" (dict "label" "Apply")  }}
+            <a href= {{ .Params.ExternalUrl }}>{{- partial "components/button.html" (dict "label" "Apply")  }}</a>
         </div>
     </div>
     
