@@ -4,6 +4,7 @@ date: 2021-04-25T23:11:13Z
 draft: false
 preview: "Help us build beautiful and modern websites, components, and visualizations!"
 url: /positions/code-challenge-volunteer
+externalUrl: ""
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor

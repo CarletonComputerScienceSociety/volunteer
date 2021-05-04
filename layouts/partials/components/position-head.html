@@ -6,5 +6,5 @@
     </div>
     <h2>{{ .Title }}</h2>
     <p>{{ .Params.Preview }}</p>
-    {{- partial "components/button.html" (dict "label" "Apply")  }}
+    <a href= {{ .Params.ExternalUrl }}>{{- partial "components/button.html" (dict "label" "Apply")  }}</a>
 </div>
