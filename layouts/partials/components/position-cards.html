@@ -1,6 +1,13 @@
 <div class="position_cards" id="positions">
+    {{ $numPositions := 0 }}
+
     {{ range (where .Site.RegularPages "Section" "positions")}}
             {{- partial "components/position-card.html" . -}}
+            {{ $numPositions = add $numPositions 1 }}
     {{ end }}
+
+    {{ if eq ($numPositions) 0 }}
+        <h2 style="font-family: var(--title-font); text-align: center; padding: 3rem 0 6rem 0">There are currently no open roles. More roles will appear throughout the summer!</h2>
+    {{ end }}
+
 </div>
-<h2 style="font-family: var(--title-font); text-align: center; margin: -1rem 0 6rem 0">More roles will appear throughout the summer!</h2>
